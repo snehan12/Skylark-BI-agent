@@ -1,0 +1,5 @@
+anthropic>=0.40.0
+streamlit>=1.38.0
+requests>=2.32.0
+python-dateutil>=2.9.0
+rapidfuzz>=3.9.0
