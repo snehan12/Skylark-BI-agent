@@ -72,19 +72,4 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Deploying (Streamlit Community Cloud)
 
-1. Push this repo to GitHub (ensure `.env` is git-ignored).
-2. On [share.streamlit.io](https://share.streamlit.io), create a new app
-   pointing at this repo, branch `main`, main file `app.py`.
-3. Add the four environment variables above under the app's **Secrets**
-   settings (TOML format).
-4. Deploy.
-
-## Known Limitations
-
-See `DECISION_LOG.md` for the full list of assumptions and trade-offs.
-Briefly: sector/status filters are validated against a fixed, hand-curated
-list rather than fuzzy-matched; Groq's Llama 3.3 70B occasionally requires a
-retry on tool-call generation; sold-to-delivered matching relies on exact
-client-code IDs rather than fuzzy name matching.
